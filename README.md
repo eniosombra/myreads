@@ -1,8 +1,19 @@
 # MyReads Project
 
-This is the starter template for the final assessment project for Udacity's React Fundamentals course. The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
+PROJECT DESCRIPTION
 
-Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
+For the development of the MyReads Project, I used the library (react-bootstrap) to give users a better graphical interface experience as well as the responsive way of the pages. With respect to navigability I used the library (React Router).
+
+This project was divided into 5 components, allowing them to be well defined and cohesive, contributing to the reuse of these components, avoiding duplication of codes.
+
+The following is a brief description of each component:
+App = Main component, where the other components are invoked.
+Search = Book Search Component.
+Book = Component that represents each book.
+Shelf = This component corresponds to the shelf of the Book component.
+Shelves = Represents a set of Shelf components.
+
+Still as a way to organize the project files, I created two complementary folders (api, components). The api folder is responsible for storing BooksAPI.js. And the components folder where all the components of this project are.
 
 ## TL;DR
 
@@ -23,17 +34,24 @@ To get started developing right away:
 └── src
     ├── App.css # Styles for your app. Feel free to customize this as you desire.
     ├── App.js # This is the root of your app. Contains static HTML right now.
-    ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
+    ├── 
     ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
+    ├── components # Project components folder
+    │   ├── Book.js 
+    │   ├── Search.js
+    │   ├── Shelf.js
+    |   └── Shelves.js
+    ├── api # API Folder
+    |   └── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
+    ├── index.css # Global styles. You probably won't need to change anything here.
     ├── icons # Helpful images for your app. Use at your discretion.
     │   ├── add.svg
     │   ├── arrow-back.svg
-    │   └── arrow-drop-down.svg
+    │   ├── arrow-drop-down.svg
+    |   └── book-reader.svg
     ├── index.css # Global styles. You probably won't need to change anything here.
     └── index.js # You should not need to modify this file. It is used for DOM rendering only.
 ```
-
-Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
 
 ## Backend Server
 
